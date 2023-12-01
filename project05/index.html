@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        form {
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+            padding: 50px;
+            border: 1px solid deeppink;
+            border-radius: 8px;
+            width: 70%;
+            margin : auto;
+        }
+        input,button {
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        input[type=submit], button {
+            background-color: aqua;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label for="username">Login name : </label>
+        <input type="text" placeholder="Username" id="username" name="user">
+        <label for="password">Password : </label>
+        <input type="text" placeholder="password" id="password" name="pw">
+        <input type="submit" value="OK">
+        <input type="reset" value="Clear">
+        <!-- <button type="button">OK</button> -->
+    </form>
+</body>
+</html>

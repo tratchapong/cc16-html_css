@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        header {
+            min-height: 80px;
+            background-color: aqua;
+
+        }
+        nav {
+            background-color: lime;
+            padding: 4px 8px;
+            display: flex;
+            gap: 8px;
+            font-size: 1.2rem;
+            justify-content: space-around;
+        }
+        nav > a {
+            display: block;
+        }
+        @media(max-width : 600px) {
+            nav {
+                justify-content: space-between;
+                background-color: coral;
+            }
+        }
+        @media(max-width : 400px) {
+            nav {
+              flex-direction: column;  
+              background-color: bisque;
+            }
+            h1 {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Responsive</h1>
+    <hr>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>

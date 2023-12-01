@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout pattern</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: aqua;
+            min-height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item1 {
+            border: 1px dashed red;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 30%;
+            min-width: 150px;
+        }
+        .item2 {
+            border: 1px dashed red;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 70%;
+            min-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Pattern</h1>
+
+    <div class="container">
+        <div class="item1">one</div>
+        <div class="item2">two</div>
+        <!-- <div class="item">three</div>
+        <div class="item">three</div>
+        <div class="item">three</div>
+        <div class="item">three</div> -->
+    </div>
+</body>
+</html>

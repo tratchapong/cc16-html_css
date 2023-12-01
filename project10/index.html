@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #para1, div {
+            color: red;
+        }
+        .bg-blue {
+            background-color: blue;
+        }
+        .text-white {
+            color: white;
+        }
+        .border {
+            border: 1px solid lime;
+        }
+        /* Class Utility */
+        div + p {
+            color: coral;
+        }
+        #para1 + * {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="border bg-blue">CSS Selector lab</h1>
+    <p id="para1" class="bg-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nihil a iusto iure. Debitis, sapiente! Quibusdam facere adipisci, quo temporibus non, illum nostrum enim cumque delectus error quidem qui rem.</p>
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit maiores impedit nulla, error dignissimos. Possimus, quod laborum? Iusto odit debitis enim commodi incidunt, accusantium voluptate modi nostrum repudiandae fugiat.</p>
+    <!-- <div id="para1">TEST DIV</div> -->
+    <div class="bg-blue text-white">TEST DIV</div>
+    <hr>
+    <p>test para</p>
+    <div>
+        <p>test paragraph</p>
+        <p>test paragraph</p>
+        <nav>
+            <p>p inside nav</p>
+        </nav>
+    </div>
+
+</body>
+</html>

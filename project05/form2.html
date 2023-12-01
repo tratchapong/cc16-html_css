@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Input</title>
+</head>
+<body>
+    <h1>HTML Form Input</h1>
+    <h3>Select subject</h3>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <input type="radio" id="html" name="subject" value="html">
+        <label for="html">HTML 5</label>
+        <input type="radio" id="css" name="subject" value="css">
+        <label for="css">CSS</label>
+        <input type="radio" id="js" name="subject" value="js">
+        <label for="js">Javascript</label>
+        <label>
+            <input type="radio" name="subject" value="git">
+            Git
+        </label>
+        <input type="submit">
+    </form>
+    <hr>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label>
+            <input type="checkbox" name="exam" value="pass" checked>
+            examination
+        </label>
+        <label>
+            <input type="checkbox" name="project" value="ok">
+            project
+        </label>
+        <input type="submit">
+    </form>
+    <hr>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label for="subject">Select Subject :</label>
+        <select name="subject" id="subject">
+            <option disabled selected>Please select</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">Javascript</option>
+        </select>
+        <label>Note :
+            <textarea name="note" cols="30" rows="5"></textarea>
+        </label>
+        <br>
+        <input type="color" name="color" >
+        <br>
+        <input type="date" name="date" ><br>
+        <input type="email" name="email" ><br><br>
+        <input type="file" name="filename" ><br>
+        <input type="number" name="mark" max="100">
+        <input type="submit">
+    </form>
+    <hr>
+</body>
+</html>
