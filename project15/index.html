@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        .para {
+            color: green;
+        }
+
+        #content {
+            color: blue;
+        }
+
+        body > #content {
+            color: gold;
+        }
+        #content-box > #content {
+            color: coral;
+        }
+        body > #content-box > #content {
+            color: deeppink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Specificity</h1>
+    <div id="content-box">
+        <p class="para" id="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, vero?</p>
+    </div>
+</body>
+</html>

@@ -58,3 +58,14 @@ body {
     border-top: 1px solid rgb(202, 199, 199);
     font-size: 24px;
   }
+
+
+  .container {
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+    padding: 1rem;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab03 : CSS Grid layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 100px 70px 1fr 1fr 50px;
+
+        }
+        .item {
+            border : 1px dashed red;
+        }
+        .item01 {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item02 {
+            grid-column: 1/2;
+        }
+        .item03 {
+            grid-column: 2/3;
+        }
+        .item04 {
+            grid-column: 3/4;
+            grid-row: 2/4 ;
+        }
+        .item05 {
+            grid-column: 1/2;
+            grid-row: 3/6;
+        }
+        .item06 {
+            grid-column: 2/3;
+            grid-row: 3/5;
+        }
+        .item07{
+            grid-column: 3/4;
+            grid-row: 4/6;
+        }
+        .item08 {
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item01">
+            <h2>Text01</h2>
+            <h2>Text02</h2>
+        </div>
+        <div class="item item02">ITEM02</div>
+        <div class="item item03">ITEM03</div>
+        <div class="item item04">ITEM04</div>
+        <div class="item item05">ITEM05</div>
+        <div class="item item06">ITEM06</div>
+        <div class="item item07">ITEM07</div>
+        <div class="item item08">ITEM08</div>
+    </div>
+</body>
+</html>
